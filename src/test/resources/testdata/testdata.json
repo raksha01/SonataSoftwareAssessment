@@ -1,0 +1,36 @@
+{
+  "login": {
+    "validUser": {
+      "username": "99999888888",
+      "password": "231298"
+    },
+    "invalidUser": {
+      "username": "9087654321",
+      "password": "110011"
+    }
+  },
+  "expectedResults": {
+    "loginSuccess": "Welcome to MPL",
+    "loginFailure": "Unable to login"
+  },
+  "scenarios": {
+    "happyPath": {
+      "username": "99999888888",
+      "password": "231298"
+    },
+    "edgeCase": {
+      "username": "",
+      "password": ""
+    }
+  },
+  "testEnvironments": {
+    "qa": {
+      "baseUrl": "",
+      "apiKey": "qa-api-key-12345"
+    },
+    "staging": {
+      "baseUrl": "",
+      "apiKey": "staging-api-key-67890"
+    }
+  }
+}

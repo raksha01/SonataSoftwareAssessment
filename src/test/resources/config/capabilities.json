@@ -1,0 +1,45 @@
+{
+  "android": {
+    "platformName": "Android",
+    "platformVersion": "13",
+    "deviceName": "Android Emulator",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.mpl.globalgames",
+    "appActivity": "com.mpl.androidapp.MPLSplashActivity",
+    "noReset": true,
+    "autoGrantPermissions": true,
+    "newCommandTimeout": 300
+  },
+  "ios": {
+    "platformName": "iOS",
+    "platformVersion": "17.0",
+    "deviceName": "iPhone 15",
+    "automationName": "XCUITest",
+    "bundleId": "com.mpl.globalgames",
+    "noReset": true,
+    "newCommandTimeout": 300
+  },
+  "browserstack": {
+    "platformName": "Android",
+    "platformVersion": "13.0",
+    "deviceName": "Samsung Galaxy S23",
+    "app": "bs://YOUR_APP_HASH",
+    "project": "MPL Challenge App",
+    "build": "Automation Build",
+    "name": "Sample Test"
+  },
+  "saucelabs": {
+    "platformName": "Android",
+    "platformVersion": "13",
+    "deviceName": "Google Pixel 7",
+    "app": "storage:YOUR_APP_ID",
+    "name": "TUI Challenge Test"
+  },
+  "lambdatest": {
+    "platformName": "Android",
+    "platformVersion": "13",
+    "deviceName": "Pixel 7",
+    "app": "lt://YOUR_APP_URL",
+    "build": "TUI Challenge Build"
+  }
+}
