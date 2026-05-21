@@ -1,6 +1,6 @@
 package com.automation.context;
 
-import com.automation.pages.SamplePage;
+import com.automation.pages.LoginPage;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,18 +11,18 @@ import java.util.Map;
 public class TestContext {
 
     private final Map<String, Object> scenarioContext;
-    private SamplePage samplePage;
+    private LoginPage loginPage;
 
     public TestContext() {
         this.scenarioContext = new HashMap<>();
     }
 
     // Page object getters (lazy initialization)
-    public SamplePage getSamplePage() {
-        if (samplePage == null) {
-            samplePage = new SamplePage();
+    public LoginPage getSamplePage() {
+        if (loginPage == null) {
+            loginPage = new LoginPage();
         }
-        return samplePage;
+        return loginPage;
     }
 
     // Add more page getters as needed
@@ -52,7 +52,7 @@ public class TestContext {
 
     public void clearContext() {
         scenarioContext.clear();
-        samplePage = null;
+        loginPage = null;
     }
 
     // Common context keys

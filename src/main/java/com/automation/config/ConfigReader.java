@@ -79,7 +79,7 @@ public class ConfigReader {
     }
 
     public static String getAppPath() {
-        return getProperty("app.path", "apps/MPL.apk");
+        return getProperty("app.path", "apps/TUIChallengeApp.apk");
     }
 
     public static int getImplicitWait() {
