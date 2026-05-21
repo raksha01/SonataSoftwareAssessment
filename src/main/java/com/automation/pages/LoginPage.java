@@ -56,74 +56,6 @@ public class LoginPage extends BasePage {
         }
     }
 
-  /* public void enterDOB(String dob) {
-
-       try {
-
-           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-           // Click calendar icon
-           WebElement calendarIcon = wait.until(
-                   ExpectedConditions.elementToBeClickable(
-                           By.xpath("//*[@resource-id='date_of_birth_field_calendar_icon']")
-                   )
-           );
-
-           calendarIcon.click();
-
-           Thread.sleep(2000);
-
-           // Switch to text input mode
-           WebElement switchMode = wait.until(
-                   ExpectedConditions.elementToBeClickable(
-                           AppiumBy.accessibilityId("Switch to text input mode")
-                   )
-           );
-
-           switchMode.click();
-
-           Thread.sleep(2000);
-
-           // Locate DOB field
-           WebElement dobField = wait.until(
-                   ExpectedConditions.presenceOfElementLocated(
-                           By.className("android.widget.EditText")
-                   )
-           );
-
-           // Click field first
-           dobField.click();
-
-           Thread.sleep(1000);
-
-           // Clear existing text
-           dobField.clear();
-
-           // Use replaceValue instead of sendKeys
-         //  driver.executeScript("mobile: replaceElementValue", Map.of("elementId", ((RemoteWebElement) dobField).getId(),"text", dob));
-
-           dobField.sendKeys(dob);
-           Thread.sleep(1000);
-
-           // Confirm button
-           WebElement confirmButton = wait.until(
-                   ExpectedConditions.elementToBeClickable(
-                           By.xpath("//*[@resource-id='date_of_birth_dialog_confirm_button']")
-                   )
-           );
-
-           confirmButton.click();
-
-           System.out.println("DOB entered successfully");
-
-       } catch (Exception e) {
-
-           throw new RuntimeException("Failed to enter DOB", e);
-       }
-   }
-
-   */
-
     public void enterDOB(String dob) {
 
         try {
@@ -175,6 +107,7 @@ public class LoginPage extends BasePage {
                             By.xpath("//*[@resource-id='date_of_birth_dialog_confirm_button']")
                     )
             );
+            Thread.sleep(3000);
 
             confirmButton.click();
 
